@@ -75,4 +75,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #required for Heroku
+  #Note to set this to the current online host -the url that heroku gave you-
+  config.action_mailer.default_url_options = { host: 'lhttp://pinterestingreload.herokuapp.com/'}
 end

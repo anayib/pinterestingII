@@ -1,4 +1,7 @@
+
+
 source 'https://rubygems.org'
+ruby '2.1.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,6 +40,8 @@ gem 'bootstrap-sass'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'devise', '~>3.4.1.rc2'
 
 group :development, :test do
      gem 'sqlite3'
