@@ -79,4 +79,14 @@ Rails.application.configure do
   #required for Heroku
   #Note to set this to the current online host -the url that heroku gave you-
   config.action_mailer.default_url_options = { host: 'lhttp://pinterestingreload.herokuapp.com/'}
+
+  #SET paperclip to upload
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['AWS_BUCKET'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
 end
