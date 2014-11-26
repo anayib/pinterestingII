@@ -43,7 +43,7 @@ gem 'bootstrap-sass'
 
 gem 'devise', '~>3.4.1.rc2'
 
-gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'paperclip', '~>4.2.0'
 
 gem 'aws-sdk' , '~>1.59.0' 
 
