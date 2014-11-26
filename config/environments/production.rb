@@ -81,6 +81,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'lhttp://pinterestingreload.herokuapp.com/'}
 
   #SET paperclip to upload
+  
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
